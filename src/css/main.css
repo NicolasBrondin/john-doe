@@ -243,6 +243,55 @@ hr {
     font-weight: 500;
 }
 
+.path {
+    position: relative;
+    max-width: 400px;
+    margin: auto;
+}
+
+.step {
+    position: relative;
+    width: 100%;
+    width: calc(100% - 20px);
+    margin-left: 20px;
+    background: #ecf0f1;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    text-align: left;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.step::before {
+    content: "";
+    height: calc(100% + 20px);
+    width: 5px;
+    background: #ecf0f1;
+    position: absolute;
+    top: -10px;
+    left: -20px;
+}
+
+.step::after {
+    content: "";
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: #ecf0f1;
+    position: absolute;
+    top:-10px;
+    left: -25px;
+}
+
+.step p {
+    margin: 0;
+}
+
+.step .step-title {
+    font-weight: 500
+}
+
 @media screen and (max-width: 500px){
     .list li {
         width: 100%;
