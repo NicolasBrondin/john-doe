@@ -1,0 +1,68 @@
+body {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    background-image: url(https://source.unsplash.com/random/1920x1080?landscape);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.page>* {
+    margin: auto;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+h1,h2,h3,p,a {
+    color: rgba(0,0,0,0.8);
+}
+
+hr {
+    border:0;
+    border-top: 1px solid rgba(0,0,0,0.05);
+}
+
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: rgba(0,0,0,0.1);
+    border: 0;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+[disabled]{
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 500px){
+    .button {
+        margin: 5px 10px;
+    }
+    .or {
+        display: inline-block;
+        width: 100%;
+    }
+}

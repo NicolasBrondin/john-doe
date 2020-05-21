@@ -1,0 +1,22 @@
+
+.skill-box {
+    display: inline-block;
+    background: #1abc9c;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: white;
+    margin: 5px;
+}
+.box-well {
+    display: inline-block;
+    height: 20px;
+    width: 100px;
+    background: #16a085;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}

@@ -1,0 +1,46 @@
+
+.card {
+    position: relative;
+    background: white;
+    max-width: 600px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 5px rgba(0,0,0,0.1);
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#person {
+    padding-top: 50px;
+    
+}
+
+#person-fullname {
+    margin-bottom:0;
+}
+#person-job {
+    margin-top:0;
+    font-weight: 500;
+    color: rgba(0,0,0,0.3);
+}
+
+#person-picture {
+    position: absolute;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    top: -50px;
+    left: calc(50% - 50px);
+    border: 5px solid white;
+}
+
+#person-country {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    top: 30px;
+    left: calc(50% + 20px);
+    border: 2px solid white;
+}

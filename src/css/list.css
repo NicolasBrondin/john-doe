@@ -1,0 +1,33 @@
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    width: 50%;
+}
+
+.list li:nth-child(even){
+    text-align: left;
+}
+.list li:nth-child(odd){
+    text-align: right;
+}
+
+
+@media screen and (max-width: 500px){
+    .list li {
+        width: 100%;
+    }
+    .list li:nth-child(even){
+        text-align: center;
+    }
+    .list li:nth-child(odd){
+        text-align: center;
+    }
+}
