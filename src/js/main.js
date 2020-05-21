@@ -22,7 +22,7 @@ var specialities =  {
 }
 
 function init(){
-    fetch('https://randomuser.me/api/')
+    fetch('https://randomuser.me/api/?nat=fr')
     .then(response => response.json())
     .then(data => {
         var user = data.results[0];

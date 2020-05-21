@@ -1,24 +1,39 @@
 body {
-    min-height: 100vh;
+    position: relative;
     width: 100%;
     margin: 0;
-    background-image: url(https://source.unsplash.com/random/1920x1080?city);
+    background-image: url(https://source.unsplash.com/random/1920x1080?landscape);
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    padding: 20px;
-    box-sizing: border-box;
+    overflow: hidden;
 }
 
-body>* {
+.page {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.page>* {
     margin: auto;
 }
 
 * {
     font-family: 'Roboto', sans-serif;
+    
+}
+
+h1,h2,h3,p,a {
     color: rgba(0,0,0,0.8);
 }
 
@@ -41,6 +56,7 @@ hr {
 
 #person {
     padding-top: 50px;
+    
 }
 
 #person-fullname {
@@ -81,4 +97,64 @@ hr {
     font-size: 16px;
     margin: 10px;
     text-decoration: none;
+}
+
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list li {
+    width: 50%;
+}
+
+.list li:nth-child(even){
+    text-align: left;
+}
+.list li:nth-child(odd){
+    text-align: right;
+}
+
+.skill-box {
+    display: inline-block;
+    background: #1abc9c;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: white;
+    margin: 5px;
+}
+.well {
+    display: inline-block;
+    height: 20px;
+    width: 100px;
+    background: #16a085;
+    vertical-align: middle;
+    border-radius: 3px;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+[disabled]{
+    opacity: 0.3;
+}
+
+@media screen and (max-width: 500px){
+    .list li {
+        width: 100%;
+    }
+    .button {
+        
+    margin: 5px 10px;
+    }
+    .or {
+        display: inline-block;
+        width: 100%;
+    }
 }

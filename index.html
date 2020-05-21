@@ -6,16 +6,73 @@
         <link rel="stylesheet" href="./src/css/main.css"/>
     </head>
     <body>
-        <div class="card" id="person">
-            <img id="person-picture" src=""/>
-            <img id="person-country" src="https://image.flaticon.com/icons/svg/197/197560.svg"/>
-            <h1 id="person-fullname"></h1>
-            <h2 id="person-job"></h2>
-            <p>Hello, je suis <strong id="person-firstname"></strong>, <strong id="person-position"></strong> spécialisé(e) en <strong id="person-speciality"></strong> actuellement <strong id="person-company"></strong> dans la ville de <strong id="person-city">Nantes</strong>.</p>
-            <hr/>
-            <a class="button" target="_blank" id="person-email">M'envoyer un email</a> ou <a target="_blank" class="button" href="https://welovedevs.com">Voir mon CV</a>
+        <div class="page">
+            <div class="card" id="person">
+                <img id="person-picture" src=""/>
+                <img id="person-country" src="https://image.flaticon.com/icons/svg/197/197560.svg"/>
+                <h1 id="person-fullname"></h1>
+                <h2 id="person-job"></h2>
+                <p>Hello, je suis <strong id="person-firstname"></strong>, <strong id="person-position"></strong> spécialisé(e) en <strong id="person-speciality"></strong> actuellement <strong id="person-company"></strong> dans la ville de <strong id="person-city">Nantes</strong>.</p>
+                <div>
+                    <a class="button" target="_blank" id="person-email">M'envoyer un email</a>
+                    <span class="or"> ou </span>
+                    <a target="_blank" class="button" href="https://welovedevs.com">Voir mon CV</a></div>
+                <hr/>
+                <h3>Expériences</h3>
+                <hr/>
+                <h3>Compétences</h3>
+                <ul class="list">
+                    <li>
+                        <div class="skill-box">
+                            Javascript
+                            <div class="well">
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span>🟊</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-box">
+                            Python
+                            <div class="well">
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span disabled>🟊</span>
+                                <span disabled>🟊</span>
+                                <span disabled>🟊</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-box">
+                            CSS
+                            <div class="well">
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span disabled>🟊</span>
+                                <span disabled>🟊</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="skill-box">
+                            Git
+                            <div class="well">
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span>🟊</span>
+                                <span disabled>🟊</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                </div>
         </div>
-
         <script src="./src/js/main.js"></script>
     </body>
 </html>
