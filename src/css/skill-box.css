@@ -1,4 +1,3 @@
-
 .skill-box {
     display: inline-block;
     background: #1abc9c;
@@ -7,6 +6,7 @@
     color: white;
     margin: 5px;
 }
+
 .box-well {
     display: inline-block;
     height: 20px;

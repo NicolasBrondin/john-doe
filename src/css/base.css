@@ -10,6 +10,10 @@ body {
     overflow: hidden;
 }
 
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
 .page {
     position: relative;
     height: 100vh;
@@ -26,11 +30,6 @@ body {
 
 .page>* {
     margin: auto;
-}
-
-* {
-    font-family: 'Roboto', sans-serif;
-    
 }
 
 h1,h2,h3,p,a {

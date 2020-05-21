@@ -15,10 +15,10 @@
 .list li:nth-child(even){
     text-align: left;
 }
+
 .list li:nth-child(odd){
     text-align: right;
 }
-
 
 @media screen and (max-width: 500px){
     .list li {
