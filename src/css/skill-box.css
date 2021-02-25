@@ -1,4 +1,5 @@
 .skill-box {
+    position: relative;
     display: inline-block;
     box-sizing: border-box;
     background: #1abc9c;
@@ -8,17 +9,32 @@
     margin: 5px;
 }
 
+.skill-box .fa.skill-favorite {
+    position: absolute;
+    color: #f1c40f;
+    font-size: 20px;
+    top: calc(50% - 10px);
+    left: -20px;
+}
+
+.list li:nth-child(even) .skill-box .fa.skill-favorite {
+    left: initial;
+    right: -20px;
+}
+
 .box-well {
     display: inline-block;
     height: 20px;
-    width: 100px;
+    /*width: 100px;*/
+    padding: 0px 5px;
     background: #16a085;
+    box-shadow: inset 0px 0px 3px 1px rgba(0,0,0,0.1);
     vertical-align: middle;
     border-radius: 3px;
     margin-left: 10px;
     text-align: center;
     color: white;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 20px;
 }
 @media screen and (max-width: 500px){
@@ -26,5 +42,9 @@
         width: 100%;
         max-width: 250px;
         text-align: center;
+    }
+    .list li:nth-child(even) .skill-box .fa.skill-favorite {
+        left: -20px;
+        right: initial;
     }
 }
